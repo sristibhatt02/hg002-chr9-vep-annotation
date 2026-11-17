@@ -1,0 +1,41 @@
+# Local environments, caches and credentials
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+.env
+.env.*
+.aws/
+*.pem
+*.key
+*.tmp
+
+# Private working history and compatibility entry point
+/.local-history/
+/run.py
+/phase2
+/deliverables
+
+# Acquired inputs and authentic raw snapshots remain local
+/analysis/cache/
+/analysis/results/
+/validation/results/
+
+# Generated explorers and earlier validation reports; publish only reports/.
+/analysis/report/*.html
+/analysis/report/*.pdf
+/analysis/report/assets/dataset.json
+/analysis/report/assets/details/
+/analysis/report/assets/details.previous/
+/analysis/report/screenshots/
+/validation/report/
+
+# Third-party npm archive staging; bundled runtime files retain their licence.
+/analysis/vendor/
+artifacts/
+
+# Captured primary-source pages are local evidence; retain required release pin.
+/analysis/docs/*
+!/analysis/docs/ensembl-release.json

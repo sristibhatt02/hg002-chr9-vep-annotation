@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "scope": "Training validation five teaching variants; HG002 analysis HG002 GRCh38 chr9:128000001-129000000",
+  "input_alleles": 1307,
+  "transcript_rows": 38589,
+  "source_export_manifest_sha256": "272910dffe0459f081bf5499b475dd525216712faaa5ebedef2a9e83ee7036d3",
+  "html_sha256": "2d13e2a600c7528b97d2217f5ee1db14f6f1a5cfb8a8d52b04d4c52d31a54b9e",
+  "self_contained_html": true,
+  "figures": 5,
+  "clinical_assertions": "fixed release 2026-11-08; copied source summaries, not project classifications",
+  "pdf_sha256": "127db918857b932098e3a2aaade99c96ac219ca9f560d57ffb754c70dc9097de"
+}

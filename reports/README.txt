@@ -1,0 +1,1 @@
+Share experiment-report.html and experiment-report.pdf together. The HTML embeds its styling and vector figures and needs no server. External links are optional citations. The PDF is a fixed-layout version. Scope: a 1 Mb HG002 GRCh38 pilot, not a completed chromosome-scale study.

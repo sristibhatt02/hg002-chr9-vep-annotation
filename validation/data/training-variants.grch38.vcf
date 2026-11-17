@@ -1,0 +1,9 @@
+##fileformat=VCFv4.2
+##reference=GRCh38
+##contig=<ID=9,length=138394717,assembly=GRCh38>
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO
+9	128328460	var1	TA	T	.	.	.
+9	128322349	var2	C	A	.	.	.
+9	128323079	var3	C	G	.	.	.
+9	128322917	var4	G	A	.	.	.
+9	128203516	var5	C	A	.	.	.

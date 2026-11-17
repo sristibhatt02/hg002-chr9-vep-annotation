@@ -1,0 +1,25 @@
+<section id="explorer">
+<p class="kicker">Interactive results · one public benchmark sample</p>
+<h2>Explore the results, one step at a time</h2>
+<p>A <strong>variant allele</strong> is one specific DNA change. This experiment contains 1,307 eligible alleles in a fixed one-million-base region of chromosome 9. Filters change which of these alleles you see; they do not run a new experiment.</p>
+<h3>1. Choose the variants you want to see</h3>
+<form id="filters" class="filters">
+<label>Kind of DNA change<select id="type"><option value="">All DNA changes</option><option value="SNV">Single-base changes (SNVs)</option><option value="indel">Short insertions / deletions (indels)</option><option value="MNV">Multiple-base substitutions (none in this run)</option></select></label>
+<label>Predicted consequence<select id="term"><option value="">All predicted consequences</option></select></label>
+<label>Gene name or identifier<input id="gene" list="genes" placeholder="For example, COQ4"></label><datalist id="genes"></datalist>
+<details class="region-controls"><summary>Optional: narrow the chromosome region</summary><div class="region-fields"><label>First base (included)<input id="start" type="number" min="128000001" max="129000000" value="128000001"></label><label>Last base (included)<input id="end" type="number" min="128000001" max="129000000" value="129000000"></label></div></details>
+<button type="submit">Update view</button><button type="button" id="reset">Show all variants</button>
+</form>
+<p class="note">Selections update automatically. Filters work together: an allele must match every active filter. “Predicted consequence” uses VEP’s overall summary; individual transcripts can differ.</p>
+<div class="change-explanation" aria-live="polite"><h3>What changed?</h3><p id="filter-status" role="status"></p><p id="filter-explanation"></p></div><p id="message" role="status"></p>
+<h3>2. See where those variants occur</h3>
+<p>Each bar below covers <strong>25,000 DNA bases</strong>. Taller bars contain more of the currently selected alleles. Select a bar to see the exact count and choose a specific allele. The gaps in reliable benchmark coverage are accounted for in the exact table.</p>
+<div id="position-chart" class="position-chart" aria-label="Allele counts in forty consecutive chromosome regions"></div>
+<div class="chart-axis"><span>chr9:128,000,001</span><span>Position along GRCh38 chromosome 9 →</span><span>129,000,000</span></div>
+<div class="view-controls"><button id="view2d" aria-pressed="true">Standard 2D view</button><button id="view3d" aria-pressed="false">Optional 3D view</button><span class="note">The same counts are available in both views.</span></div>
+<div id="scene-wrap" hidden><div class="view-controls"><button id="camera-reset">Reset camera</button><button id="zoom-in">Zoom in</button><button id="zoom-out">Zoom out</button><button id="pause">Pause motion</button><label>Bar-height scale<select id="scale"><option value="linear">Linear counts</option><option value="sqrt">Square-root counts</option></select></label></div><p class="note">3D axes: chromosome position (X), grouped consequence (Y), and allele count (Z). All bars use the same colour; the selected region is highlighted. A higher molecular-severity rank does not establish clinical significance.</p><div id="scene" aria-label="Optional 3D count visualization; the 2D chart and exact table provide equivalent selections"></div><p id="scene-caption"></p></div>
+<details id="overview"><summary>See exact counts and benchmark coverage for every region</summary><p>Coverage is the number of high-confidence benchmark bases in a region. The rate is selected alleles per million high-confidence bases, using the full region’s coverage even if the position filter cuts that region. No coverage means no rate can be calculated.</p><div class="table-scroll" tabindex="0"><table><caption>All forty 25 kb regions in the analyzed interval</caption><thead><tr><th scope="col">Choose region · GRCh38 bases</th><th scope="col">Selected alleles</th><th scope="col">High-confidence bases</th><th scope="col">Alleles / million high-confidence bases</th></tr></thead><tbody id="bin-rows"></tbody></table></div></details>
+<h3>3. Read the evidence for a specific DNA change</h3>
+<p>A gene can have several <strong>transcripts</strong>—different RNA versions of that gene. The same allele can therefore receive different annotations. Select a region, then an allele, to compare those versions.</p>
+<div class="evidence-grid"><div><h3>Selected region</h3><p id="bin-detail">Select a bar above to begin.</p><label>Choose one allele<select id="allele-select"><option value="">Select a region first</option></select></label><div id="allele-list"></div></div><div id="allele-detail" aria-live="polite"><h3>What does this result mean?</h3><p>After you select an allele, this panel explains the DNA change, the predicted consequence and the transcript evidence. These annotations describe possible molecular effects; they do not diagnose disease.</p></div></div>
+</section>

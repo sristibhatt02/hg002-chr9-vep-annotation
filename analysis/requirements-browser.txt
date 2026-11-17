@@ -1,0 +1,2 @@
+# Optional; an existing 1.46.0 installation was used for local verification.
+playwright==1.46.0

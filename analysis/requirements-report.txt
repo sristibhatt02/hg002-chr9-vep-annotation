@@ -1,0 +1,4 @@
+# Optional report generation; separate from annotation requirements.
+matplotlib==3.10.5
+playwright==1.46.0
+# Install the matching Chromium with: python -m playwright install chromium

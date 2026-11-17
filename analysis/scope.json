@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "sample": "HG002",
+  "release": "GIAB NIST v4.2.1",
+  "assembly": "GRCh38",
+  "chromosome": "chr9",
+  "start_0based": 128000000,
+  "end_0based_exclusive": 129000000,
+  "selection_rationale": "Fixed 1 Mb contiguous interval surrounding the chromosome 9 teaching-validation region, chosen before examining HG002 consequences. Teaching variants remain separate from HG002 totals.",
+  "interval_rule": "Full anchored REF span [POS-1, POS-1+len(REF)) must lie inside the selected interval and one high-confidence BED interval, both before and after normalization. Insertions use their VCF anchor. No symbolic alleles, breakends, spanning deletion stars, non-ACGT alleles, non-PASS records or absent sample ALT alleles. Small variant alleles have REF and ALT length <=50 bases.",
+  "rest_max_alleles": 2000,
+  "bin_width_bp": 25000,
+  "full_chromosome_status": "blocked",
+  "blockers": ["Standard Ensembl release 116 GRCh38 indexed cache is listed at 26G compressed, exceeding approximately 22 GiB available disk before extraction, reference and engine storage.", "Docker client exists but daemon is unavailable; no local VEP executable or cache was found."],
+  "clinvar_status": "Optional exact normalized overlap with the pinned ClinVar GRCh38 release; consult the overlay manifest for the actual result."
+}

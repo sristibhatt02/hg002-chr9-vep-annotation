@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "pdf_pages": 27,
+  "pdf_all_pages_text_checked": true,
+  "pdf_out_of_page_text_blocks": 0,
+  "embedded_scientific_figures": 5,
+  "html_self_contained_offline_checked": true,
+  "browser": "Chromium 128.0.6613.18",
+  "webkit_check": "unavailable: matching executable not installed",
+  "scientific_counts_reconciled": true,
+  "static_3d_figures": 2,
+  "3d_figure_pages": [
+    2,
+    13
+  ],
+  "3d_counts_reconciled": true,
+  "publication_layout": "single finished report; development history excluded",
+  "3d_overview_page": 2,
+  "html_3d_overview_before_executive_summary": true,
+  "project_title": "HG002 Chromosome 9 Variant Annotation",
+  "project_title_verified": true
+}
